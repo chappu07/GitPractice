@@ -1,15 +1,8 @@
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+  Serial.begin(115200);
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  delay(2000);
-
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(2000);
-
-  digitalWrite(LED_BUILTIN, LOW);
-  delay(3000);
-  
+  Serial.println("GitHub test - Version 4");
+  delay(1000);
 }
